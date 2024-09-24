@@ -6,43 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Start Coding Here -->
 
     <!-- Start coding by O-->
-    <section id="contact" class="flex justify-center" >
-      <div id="white-block" class="bg-red-300 w-10/12 flex justify-center">
-        <div id="inputform" class="flex flex-col justify-center items-center gap-6 w-2/4 bg-yellow-300 py-8">
-          <h1 class="text-4xl">Get in Touch</h1>
+    <section id="contact" class="flex justify-center font-['Inter'] bg-slate-100" >
+      <div id="white-block" class="w-10/12 flex justify-center bg-white rounded-3xl">
+        <div id="inputform" class="flex flex-col justify-center items-center gap-6 w-2/4 bg-white py-8">
+          <h1 class="text-4xl font-semibold">Get in Touch</h1>
 
           <div id="input_interface" class="flex flex-col gap-3 w-full ">
 
             <div id="nameinput" class="flex flex-col gap-1">
-              <label for="inputname">Name</label>
-              <input type="text" placeholder="John Doe" class="h-8"/>
+              <label for="inputname" class="text-[#5F5F76]">Name</label>
+              <input type="text" placeholder="John Doe" class="h-8 bg-[#FFFFFF] rounded-xl border border-[#E0E0ED]"/>
             </div>
             <div id="emailinput" class="flex flex-col gap-1">
-              <label for="input_email">Email</label>
-              <input type="email" placeholder="John@example.com" class="h-8"/>
+              <label for="input_email" class="text-[#5F5F76]">Email</label>
+              <input type="email" placeholder="John@example.com" class="h-8 bg-[#FFFFFF] rounded-xl border border-[#E0E0ED]"/>
             </div>
             <div id="messageinput" class="flex flex-col gap-1">
-              <label for="input_email">Message</label>
-              <textarea name="Message" cols="40" rows="3" placeholder="Your message..."></textarea>
+              <label for="input_email" class="text-[#5F5F76]">Message</label>
+              <textarea name="Message" cols="40" rows="3" placeholder="Your message..." class="bg-[#FFFFFF] rounded-xl border border-[#E0E0ED]"></textarea>
             </div>
           </div>
 
-          <div id="buttonSubmit" class="w-full bg-slate-500">
-            <button type="button" class="w-full bg-slate-200 h-9">Submit</button>
+          <div id="buttonSubmit" class="w-full">
+            <button type="button" class="w-full bg-black h-9 text-white rounded-3xl">Submit</button>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="flex justify-center  bg-red-500">
-      <div class="flex justify-between w-10/12 py-10">
-      <div id="trade_mark">Acme productivity app ©2024 </div>
-      <div id="footer_menu" class="flex justify-between gap-6">
+    <footer class="flex justify-center bg-slate-100">
+      <div class="flex justify-between w-10/12 py-20">
+      <div id="trade_mark" class="text-[#5F5F76]">Acme productivity app ©2024 </div>
+      <div id="footer_menu" class="flex justify-between gap-6 font-semibold">
         <a href="index.html">FAQ</a>
         <a href="index.html">Terms</a>
         <a href="index.html">AI Policy</a>
